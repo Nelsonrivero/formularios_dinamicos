@@ -22,4 +22,22 @@ Sigue estos pasos para instalar el proyecto:
 
 ```bash
 composer install
-asdasdas
+```
+
+2. Instala las dependencias de Node.js:
+```bash
+npm install
+```
+3. Compila los assets para el frontend:
+```bash
+npm run dev
+```
+4. Copia el archivo de configuración .env.example y renómbralo a .env. Luego, genera una nueva clave de aplicación::
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+5.Configura tu base de datos en el archivo .env y ejecuta las migraciones para crear las tablas en la base de datos:
+```bash
+php artisan migrate
+```
